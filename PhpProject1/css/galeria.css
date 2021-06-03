@@ -1,0 +1,92 @@
+body {
+    background-image: url("../imgs/fondo.jpg");
+    padding: 0;
+    font: 100 16px helvetica, sans-serif;
+}
+
+
+/* GALERIA DE IMAGES */
+
+#galeria1 {
+    position: fixed;
+    right: 100px;
+    bottom: 10px;
+    width: 80%;
+    padding-left: 150px;
+}
+
+#contenprincipal {
+    width: 70%;
+    *border: 1px solid black;
+    overflow: hidden;
+}
+
+#contenimag {
+    width: 100%;
+    box-shadow: black 1px 1px 15px;
+    border: inset 5px black;
+}
+
+#galeria_miniaturas {
+    display: block;
+    position: relative;
+    left: -80px;
+    bottom: -2px;
+}
+
+.miniatura {
+    width: 10%;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.miniatura:hover {
+    opacity: .8;
+    -moz-opacity: .8;
+    -khtml-opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.miniatura:active {
+    opacity: 1;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    filter: alpha(opacity=80);
+}
+
+
+/*-----------botones de navegacion----------------*/
+
+.siguiente {
+    position: fixed;
+    bottom: 350px;
+    left: 700px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.siguiente:hover {
+    box-shadow: lightblue 1px 1px 25px;
+}
+
+.anterior {
+    position: fixed;
+    bottom: 350px;
+    right: 740px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.anterior:hover {
+    box-shadow: lightblue 1px 1px 25px;
+}
+
+
+/*boton atras*/
+
+.atras {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+}
