@@ -153,7 +153,7 @@ $horasBotones = array_diff($horasDisponibles, $horasOcupadas);
 
                                     <div class="col-sm-12">
                                         <div class="form-group my-2">
-                                            <label for="hora">Hora: </label>
+                                            <label for="hora">Hora: </label> <br>
                                             <form action='../php/agregarReserva.php' method="post">
                                                 <?php foreach ($horasBotones as $h) { ?>
                                                     <input type='hidden' name='nombre' value='<?php echo $_POST['nombre'] ?>'>
@@ -167,7 +167,9 @@ $horasBotones = array_diff($horasDisponibles, $horasOcupadas);
                                     </div> <!--pedir hora-->
 
                                     <div class="form-group my-4 text-center">
-                                        <input type="submit" class="btn btn-primary" value="Reservar">
+                                        <form action="../php/padel.php">
+                                            <input type="submit" value="Cambiar fecha" />
+                                        </form>
                                     </div>
                                 </form>
                             </div>
