@@ -16,7 +16,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `reservas`
 --
-
+/*
 CREATE TABLE IF NOT EXISTS `reservas` (
   `id_reserva` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL,
@@ -28,4 +28,15 @@ CREATE TABLE IF NOT EXISTS `reservas` (
 `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_reserva`),
 FOREIGN KEY (id_usuario) REFERENCES users(id)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;*/
+
+CREATE TABLE `reservas` (
+  `id_reserva` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `tipo` varchar(20) NOT NULL,
+  `telefono` varchar(50) NOT NULL,
+  `fecha` date NOT NULL,
+  `hora` varchar(5) DEFAULT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `created_at` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
